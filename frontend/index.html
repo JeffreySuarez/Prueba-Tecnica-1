@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemetria</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css"> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="">TELEMETRIA</h1>
+
+
+        <div class="contenedor-tabla  scrollmenu">
+            <!-- inicio formulario select para la paginacion -->
+
+
+            <h4>Show rows</h4>
+            <div class="form-group"> <!--		Show Numbers Of Rows 		-->
+                <select class="form-control" name="state" id="maxRows" title="tabla">
+                    <option value="5000">Show ALL Rows</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="70">70</option>
+                    <option value="100">100</option>
+                </select>
+
+            </div>
+
+            <!-- fin formulario select para la paginacion -->
+
+
+            <table id="table-id"
+                class=" table myTable table-striped table-class table-bordered border-white text-center bg-success ">
+                <thead>
+                    <tr>
+                        <th scope="col">Id Dispositivo</th>
+                        <th scope="col">Nombre Dispositivo</th>
+                        <th scope="col">Id Mensaje
+                            <select class="table-filter">
+                                <option value="all"></option>
+                            </select>
+                        </th>
+                        <th scope="col">Fecha Dispositivo</th>
+                        <th scope="col">Latitud</th>
+                        <th scope="col">Longitud</th>
+                        <th scope="col">Temp [°C]</th>
+                        <th scope="col">Bat [V]</th>
+                        <th scope="col">Id Evento</th>
+                        <th scope="col">Descripción Evento</th>
+                        <th scope="col">Ciclando</th>
+                        <th scope="col">VAC [V]</th>
+                        <th scope="col">IAC [A]</th>
+                        <th scope="col">VDC [V]</th>
+                        <th scope="col">IDC [A]</th>
+                        <th scope="col">Relé Ciclado</th>
+                        <th scope="col">Relé Auxiliar</th>
+                        <th scope="col">Horómetro VAC [H]</th>
+                        <th scope="col">Horómetro VDC [H]</th>
+                        <th scope="col">Fecha Grabación</th>
+
+                    </tr>
+                </thead>
+                <tbody class=" table-light table-bordered border-primary"></tbody>
+            </table>
+
+
+        </div>
+
+    </div> <!-- 		End of Container -->
+    <!--		Start Pagination -->
+    <div class='pagination-container'>
+        <nav>
+            <ul class="pagination">
+
+                <li data-page="prev">
+                    <span>
+                        < <span class="sr-only">
+                    </span></span>
+                </li>
+                <!--	Here the JS Function Will Add the Rows -->
+                <li data-page="next" id="prev">
+                    <span> > <span class="sr-only"></span></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- query para paginacion -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script> -->
+    <script src="./assets/js/pagination.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+
+    <!-- paginacion -->
+
+    <!-- <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script> -->
+</body>
+
+</html>
