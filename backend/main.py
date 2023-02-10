@@ -21,18 +21,18 @@ app.config['CORS_HEADERS'] = 'Content-type'
 
 @app.route('/InfoTelemetria')
 @cross_origin()
-def getALLusers():
+def getALLdatos():
 
     return verDatosController()
 
 
 # *************************************************************
 
-# ver consulta de usuarios
+# ver consulta de datos
 
 @app.route('/InfoTelemetria/<id>')
 @cross_origin()
-def getusers(id):
+def getdatos(id):
 
     return verDatosController(id)
 

@@ -1,9 +1,4 @@
-# ********************************************************************************-
-#
-#   Capa de abstraccion apra conexion a Bases de datos
-#   > Autor: Julio Cesar Velosa Castañeda
-#   > fecha: 16 / Agosto / 2016
-#
+
 # ********************************************************************************-
 
 from pydal import DAL, Field    # Importamos las librerias necesarias
